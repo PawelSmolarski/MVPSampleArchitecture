@@ -49,7 +49,7 @@ public enum Navigator {
             if(this.homeFragment.isAdded() || fragmentBackStack.contains(this.homeFragment) && this.homeFragment != this.currentFragment)
                 return;
 
-            restoreView(activity);
+            restoreView(activity, frameLayout);
         }
 
     }
@@ -66,9 +66,9 @@ public enum Navigator {
         fragmentBackStack.push(homeFragment);
     }
 
-    private void restoreView(AppCompatActivity activity){
+    private void restoreView(AppCompatActivity activity, FrameLayout frameLayout){
         final FragmentTransaction fragmentTransaction = activity.getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.main_fragment_container, this.homeFragment, "homeFragment");
+        fragmentTransaction.add(frameLayout.getId(), this.homeFragment, "homeFragment");
         fragmentTransaction.commit();
     }
 
