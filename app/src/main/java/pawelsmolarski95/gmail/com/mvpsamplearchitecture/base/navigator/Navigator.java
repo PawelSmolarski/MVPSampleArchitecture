@@ -68,6 +68,7 @@ public enum Navigator {
 
     private void restoreView(AppCompatActivity activity, FrameLayout frameLayout){
         final FragmentTransaction fragmentTransaction = activity.getSupportFragmentManager().beginTransaction();
+        frameLayout.removeAllViews();
         fragmentTransaction.add(frameLayout.getId(), this.homeFragment, "homeFragment");
         fragmentTransaction.commit();
     }
