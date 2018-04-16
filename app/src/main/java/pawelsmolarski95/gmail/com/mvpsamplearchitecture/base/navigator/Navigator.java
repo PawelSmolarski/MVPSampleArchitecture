@@ -5,6 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.FrameLayout;
+
 import java.util.Stack;
 import pawelsmolarski95.gmail.com.mvpsamplearchitecture.R;
 
@@ -35,13 +37,13 @@ public enum Navigator {
      *  Initializes fragment as home one. Should be called in onCreate method in main activity.
      *
      * @param homeFragment to be set as home
-     * @param frameLayoutId of fragment
+     * @param frameLayout for keeping fragment
      * @param activity to be filled out
      */
-    public void initializeHomeFragment(Fragment homeFragment, int frameLayoutId, AppCompatActivity activity) {
+    public void initializeHomeFragment(Fragment homeFragment, FrameLayout frameLayout, AppCompatActivity activity) {
 
         if (this.homeFragment == null) {
-                initializeView(homeFragment, frameLayoutId, activity);
+                initializeView(homeFragment, frameLayout, activity);
 
         } else {
             if(this.homeFragment.isAdded() || fragmentBackStack.contains(this.homeFragment) && this.homeFragment != this.currentFragment)
@@ -52,13 +54,14 @@ public enum Navigator {
 
     }
 
-    private void initializeView(Fragment homeFragment, int frameLayoutId, AppCompatActivity activity){
+    private void initializeView(Fragment homeFragment, FrameLayout frameLayout, AppCompatActivity activity){
         final FragmentTransaction fragmentTransaction = activity.getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.main_fragment_container, homeFragment, "homeFragment");
+        frameLayout.removeAllViews();
+        fragmentTransaction.add(frameLayout.getId(), homeFragment, "homeFragment");
         fragmentTransaction.commit();
 
         this.homeFragment = homeFragment;
-        this.frameLayoutId = frameLayoutId;
+        this.frameLayoutId = frameLayout.getId();
         this.currentFragment = homeFragment;
         fragmentBackStack.push(homeFragment);
     }

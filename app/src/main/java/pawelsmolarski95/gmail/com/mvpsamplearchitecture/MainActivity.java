@@ -2,6 +2,8 @@ package pawelsmolarski95.gmail.com.mvpsamplearchitecture;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.widget.FrameLayout;
+
 import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.BaseActivity;
 import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.IHasComponent;
 import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.navigator.Navigator;
@@ -24,7 +26,7 @@ public class MainActivity extends BaseActivity implements IHasComponent<IHomeCom
         setContentView(R.layout.activity_main);
 
         final IHomeContract.IView homeFragment = new HomeFragment();
-        Navigator.INSTANCE.initializeHomeFragment((Fragment) homeFragment, R.id.main_fragment_container, this);
+        Navigator.INSTANCE.initializeHomeFragment((Fragment) homeFragment , (FrameLayout) this.findViewById(R.id.main_fragment_container), this);
         this.initializeInjector(homeFragment);
     }
 
