@@ -15,7 +15,7 @@ public interface IHomeContract {
 
     interface IPresenter {
 
-        interface ExampleListener {
+        interface MainListener {
 
         }
 

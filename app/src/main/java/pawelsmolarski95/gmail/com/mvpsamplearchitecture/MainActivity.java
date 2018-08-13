@@ -16,7 +16,7 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.modules.home.injection.I
 /**
  * Main activity
  */
-public class MainActivity extends BaseActivity implements IHasComponent<IHomeComponent>, IHomeContract.IPresenter.ExampleListener {
+public class MainActivity extends BaseActivity implements IHasComponent<IHomeComponent>, IHomeContract.IPresenter.MainListener {
 
     private IHomeComponent homeComponent;
 
