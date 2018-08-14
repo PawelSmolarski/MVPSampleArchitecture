@@ -11,10 +11,8 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.modules.examplefragment.
  * Created by psmolarski on 18.03.2018.
  *
  */
-
 @Module
 public class ExampleModule {
-
     private final IExampleContract.IView view;
 
     public ExampleModule(IExampleContract.IView view){
@@ -32,5 +30,4 @@ public class ExampleModule {
     ExampleModel provideModel() {
         return new ExampleModel();
     }
-
 }

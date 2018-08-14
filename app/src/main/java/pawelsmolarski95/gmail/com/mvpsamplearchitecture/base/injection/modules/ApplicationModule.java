@@ -14,7 +14,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.AndroidApplication;
  *
  * Application Module
  */
-
 @Module
 public class ApplicationModule {
     private final AndroidApplication application;
@@ -34,5 +33,4 @@ public class ApplicationModule {
     Resources provideResources() {
         return application.getResources();
     }
-
 }

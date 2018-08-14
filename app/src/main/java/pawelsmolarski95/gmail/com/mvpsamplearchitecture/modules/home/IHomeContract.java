@@ -9,16 +9,12 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.IBaseView;
  */
 
 public interface IHomeContract {
-
     interface IView extends IBaseView {
     }
 
     interface IPresenter {
 
         interface MainListener {
-
         }
-
     }
-
 }

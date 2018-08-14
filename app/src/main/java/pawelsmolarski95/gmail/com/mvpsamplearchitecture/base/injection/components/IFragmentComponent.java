@@ -10,10 +10,8 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.modules.F
  *
  * Fragment base component
  */
-
 @PerFragment
 @Component(dependencies = IApplicationComponent.class, modules = FragmentModule.class)
 public interface IFragmentComponent {
-
     Fragment fragment();
 }

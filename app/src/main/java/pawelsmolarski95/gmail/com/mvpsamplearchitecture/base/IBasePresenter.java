@@ -6,7 +6,6 @@ package pawelsmolarski95.gmail.com.mvpsamplearchitecture.base;
  */
 
 interface IBasePresenter {
-
     /**
      * Method that should signal the appropriate view to show the appropriate error notification
      * with the provided message.
@@ -36,5 +35,4 @@ interface IBasePresenter {
      * Method that gives information if fragment is still on view.
      */
     boolean isViewAvailable();
-
 }

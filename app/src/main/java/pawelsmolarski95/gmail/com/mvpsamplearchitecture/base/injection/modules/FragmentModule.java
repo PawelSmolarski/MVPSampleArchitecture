@@ -12,7 +12,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.PerFragme
  *
  * Fragment Module
  */
-
 @Module
 public class FragmentModule {
     private final Fragment fragment;
@@ -26,5 +25,4 @@ public class FragmentModule {
     Fragment fragment() {
         return this.fragment;
     }
-
 }

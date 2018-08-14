@@ -13,7 +13,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.modules.A
  */
 
 public class AndroidApplication extends Application {
-
     private IApplicationComponent applicationComponent;
 
     @Override
@@ -32,5 +31,4 @@ public class AndroidApplication extends Application {
     public IApplicationComponent getApplicationComponent() {
         return this.applicationComponent;
     }
-
 }

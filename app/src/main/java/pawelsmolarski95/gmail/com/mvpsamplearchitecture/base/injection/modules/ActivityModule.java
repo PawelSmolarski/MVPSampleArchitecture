@@ -11,7 +11,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.PerActivi
  *
  * Activity module
  */
-
 @Module
 public class ActivityModule {
     private final Activity activity;
@@ -25,5 +24,4 @@ public class ActivityModule {
     Activity activity() {
         return this.activity;
     }
-
 }

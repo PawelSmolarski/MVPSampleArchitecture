@@ -11,10 +11,8 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.modules.A
  * Activity base component
  *
  */
-
 @PerActivity
 @Component(dependencies = IApplicationComponent.class, modules = ActivityModule.class)
 public interface IActivityComponent {
-    //Exposed to sub-graphs.
     Activity activity();
 }

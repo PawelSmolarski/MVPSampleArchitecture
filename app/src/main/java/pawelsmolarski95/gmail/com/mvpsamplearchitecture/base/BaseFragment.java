@@ -21,7 +21,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.modules.F
  * Base clasc for fragments in project
  */
 public abstract class BaseFragment extends Fragment implements IBaseView {
-
     private boolean isInjected = false;
 
     @Override
@@ -70,7 +69,6 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
      */
     @SuppressWarnings("unchecked")
     protected <C> C getComponent(Class<C> componentType) throws IllegalStateException {
-
         if(getActivity() == null )
             throw new IllegalStateException("Activity is null");
 
@@ -122,5 +120,4 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     public boolean isAvailable() {
         return getActivity() != null && isAdded() && ((BaseActivity) getActivity()).isAvailable();
     }
-
 }

@@ -9,7 +9,6 @@ import android.util.Log;
  */
 
 public abstract class BasePresenter implements IBasePresenter{
-
     private final IBaseView view;
 
     protected BasePresenter(IBaseView view) {

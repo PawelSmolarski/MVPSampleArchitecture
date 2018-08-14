@@ -17,7 +17,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.modules.home.injection.I
  * Main activity
  */
 public class MainActivity extends BaseActivity implements IHasComponent<IHomeComponent>, IHomeContract.IPresenter.MainListener {
-
     private IHomeComponent homeComponent;
 
     @Override
@@ -26,7 +25,7 @@ public class MainActivity extends BaseActivity implements IHasComponent<IHomeCom
         setContentView(R.layout.activity_main);
 
         final IHomeContract.IView homeFragment = new HomeFragment();
-        Navigator.INSTANCE.initializeHomeFragment((Fragment) homeFragment , (FrameLayout) this.findViewById(R.id.main_fragment_container), this);
+        Navigator.INSTANCE.initializeHomeFragment((Fragment) homeFragment , (FrameLayout) this.findViewById(R.id.flMainFragmentContainer), this);
         this.initializeInjector(homeFragment);
     }
 
@@ -50,5 +49,4 @@ public class MainActivity extends BaseActivity implements IHasComponent<IHomeCom
             super.onBackPressed();
         }
     }
-
 }

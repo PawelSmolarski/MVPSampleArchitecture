@@ -9,12 +9,10 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.IBaseView;
  */
 
 public interface IExampleContract {
-
     interface IView extends IBaseView {
     }
 
     interface IPresenter {
 
     }
-
 }

@@ -23,7 +23,6 @@ import static pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.navigator.Na
  */
 
 public class HomeFragment extends BaseFragment implements IHomeContract.IView {
-
     @Override
     protected boolean onInjectView() throws IllegalStateException {
         getComponent(IHomeComponent.class).inject(this);
@@ -46,10 +45,9 @@ public class HomeFragment extends BaseFragment implements IHomeContract.IView {
         return fragmentView;
     }
 
-    @OnClick(R.id.goSecond)
+    @OnClick(R.id.btnGoSecond)
     void onClickSecond(){
         Fragment fragment = new ExampleFragment();
         INSTANCE.navigateView(fragment, null ,true, false);
     }
-
 }

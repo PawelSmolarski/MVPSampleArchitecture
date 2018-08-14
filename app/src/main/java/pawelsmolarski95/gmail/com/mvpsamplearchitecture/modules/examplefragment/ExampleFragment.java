@@ -20,7 +20,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.modules.examplefragment.
  */
 
 public class ExampleFragment extends BaseFragment implements IExampleContract.IView {
-
     @Inject
     IExampleContract.IPresenter presenter;
 
@@ -33,7 +32,6 @@ public class ExampleFragment extends BaseFragment implements IExampleContract.IV
                 .fragmentModule(getFragmentModule())
                 .build()
                 .inject(this);
-
     }
 
     @Nullable
@@ -44,7 +42,5 @@ public class ExampleFragment extends BaseFragment implements IExampleContract.IV
         ButterKnife.bind(this, fragmentView);
 
         return fragmentView;
-
     }
-
 }

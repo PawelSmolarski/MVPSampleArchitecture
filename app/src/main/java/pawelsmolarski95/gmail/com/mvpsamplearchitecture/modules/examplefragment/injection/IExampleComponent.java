@@ -14,18 +14,12 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.modules.examplefragment.
  *
  * Example module componenet
  */
-
 @PerFragment
 @Component(dependencies = IApplicationComponent.class, modules = {FragmentModule.class, ExampleModule.class})
 public interface IExampleComponent extends IFragmentComponent {
-
     void inject(ExampleFragment exampleFragment);
 
     IExampleContract.IPresenter providePresenter();
 
     ExampleModel provideModel();
-
-
 }
-
-

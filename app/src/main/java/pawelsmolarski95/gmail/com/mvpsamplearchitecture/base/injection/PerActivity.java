@@ -9,7 +9,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  *
  * Custom scope for Activity life duration
  */
-
 @Scope
 @Retention(RUNTIME)
 public @interface PerActivity {}

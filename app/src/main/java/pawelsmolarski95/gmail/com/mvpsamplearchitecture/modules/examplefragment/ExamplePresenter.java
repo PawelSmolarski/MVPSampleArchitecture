@@ -11,7 +11,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.BasePresenter;
  */
 
 public class ExamplePresenter extends BasePresenter implements IExampleContract.IPresenter {
-
     private final static String TAG = "ExamplePresenter";
 
     private final IExampleContract.IView view;
@@ -23,7 +22,6 @@ public class ExamplePresenter extends BasePresenter implements IExampleContract.
         this.view = view;
         this.model = model;
     }
-
 
     @Override
     protected String getPresenterTag() {

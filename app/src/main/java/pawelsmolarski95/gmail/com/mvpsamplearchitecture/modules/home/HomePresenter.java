@@ -11,10 +11,9 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.BasePresenter;
  */
 
 public class HomePresenter extends BasePresenter implements IHomeContract.IPresenter {
-
     private final static String TAG = "HomePresenter";
-    private final IHomeContract.IView view;
 
+    private final IHomeContract.IView view;
 
     @Inject
     public HomePresenter(IHomeContract.IView view) {
@@ -22,10 +21,8 @@ public class HomePresenter extends BasePresenter implements IHomeContract.IPrese
         this.view = view;
     }
 
-
     @Override
     public String getPresenterTag() {
         return TAG;
     }
-
 }

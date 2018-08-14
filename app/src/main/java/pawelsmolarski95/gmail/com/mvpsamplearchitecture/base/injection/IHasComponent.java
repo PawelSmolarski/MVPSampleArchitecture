@@ -5,7 +5,6 @@ package pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection;
  *
  * Interface which represents contract with components
  */
-
 public interface IHasComponent<C> {
     C getComponent();
 }

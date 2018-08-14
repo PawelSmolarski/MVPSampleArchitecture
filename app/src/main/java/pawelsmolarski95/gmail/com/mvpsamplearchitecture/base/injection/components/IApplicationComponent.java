@@ -12,15 +12,12 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.modules.A
  *
  * Application life duration component
  */
-
 @Singleton
 @Component(modules = ApplicationModule.class)
 public interface IApplicationComponent {
-
     void inject(BaseActivity baseActivity);
 
     Context context();
 
     Resources resources();
 }
-

@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_home"
+        android:id="@+id/tvHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -13,10 +13,10 @@
         android:text="@string/hello_world" />
 
     <Button
-        android:id="@+id/goSecond"
+        android:id="@+id/btnGoSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tv_home"
+        android:layout_above="@+id/tvHome"
         android:layout_centerHorizontal="true"
         android:text="@string/go_to_example_fragment" />
 </RelativeLayout>

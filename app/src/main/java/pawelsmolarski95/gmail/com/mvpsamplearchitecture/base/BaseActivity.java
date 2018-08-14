@@ -15,7 +15,6 @@ import pawelsmolarski95.gmail.com.mvpsamplearchitecture.base.injection.modules.A
  */
 
 public abstract class BaseActivity extends AppCompatActivity {
-
     private boolean isAvailable;
 
     @Override

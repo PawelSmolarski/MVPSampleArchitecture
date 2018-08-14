@@ -6,9 +6,7 @@
     tools:context="pawelsmolarski95.gmail.com.mvpsamplearchitecture.MainActivity">
 
     <FrameLayout
-        android:id="@+id/main_fragment_container"
+        android:id="@+id/flMainFragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-
+        android:layout_height="match_parent"/>
 </android.support.constraint.ConstraintLayout>

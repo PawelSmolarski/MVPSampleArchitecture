@@ -9,7 +9,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  *
  * Custom scope for Fragment life duration
  */
-
 @Scope
 @Retention(RUNTIME)
 public @interface PerFragment {}

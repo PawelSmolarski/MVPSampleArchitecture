@@ -6,7 +6,6 @@ package pawelsmolarski95.gmail.com.mvpsamplearchitecture.base;
  */
 
 public interface IBaseView {
-
     void errorNotification(int messageId);
 
     void errorNotification(String message);
@@ -18,5 +17,4 @@ public interface IBaseView {
     void hideLoadingBar();
 
     boolean isAvailable();
-
 }

@@ -7,7 +7,5 @@ package pawelsmolarski95.gmail.com.mvpsamplearchitecture.modules.examplefragment
  */
 
 public class ExampleModel {
-
     // TODO pass any logic you want
-
 }
